@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Corneliu Marinescu</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Questrial&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <div onclick="scrollHome()" class="name">
+                <a>
+                    <h1><span>C</span>orneliu.</h1>
+                </a>
+            </div>
+            <div onclick="openBtn()" class="hamburger" id="hamburger">
+                <span id="bar-1" class="bar"></span>
+                <span id="bar-2" class="bar"></span>
+                <span id="bar-3" class="bar"></span>
+            </div>
+        </header>
+        <div class="sidebar" id="sidebar">
+            <div onclick="closeBtn()" class="closex" id="closex">
+                <span class="xbar"></span>
+                <span class="xbar"></span>
+            </div>
+            <div class="links">
+                <a onclick="scrollHome(), closeBtn()" >Profil</a>
+                <a onclick="scrollPortofoliu(), closeBtn()">Portofloiu</a>
+                <a onclick="scrollContact(), closeBtn()">Cere o oferta</a>
+            </div>
+        </div>
+        <section id="prezentare" class="prezentare">
+            <div class="profil">
+                <div class="poza">
+                    <a  href="https://www.instagram.com/stefan_corneliu/">
+                        <img src="icons/profil1.jpg">
+                    </a>
+                </div>
+                <div class="nume">
+                    <h1>Salut, sunt <span>Corneliu</span></h1>
+                    <div class="animated">
+                        <span></span>
+                    </div>
+                    <div class="butoane">
+                            <button onclick="scrollPortofoliu()">Portofoliu</button> 
+
+                        <a href="/Listă de prețuri.pdf" download>
+                            <button>Lista preturi</button> 
+                        </a>
+                        <a>
+                            <button onclick="scrollContact()">Cere o oferta</button>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section id="portofoliu" class="portofoliu">
+            <div class="text-poze">
+                <h1>Cele mai recente poze</h1>
+                    <div class="row">
+                        <div class="image">
+                            <img class="small-image" src="icons/masina.jpg">
+                            <div class="overlay">
+                                <div class="overlay-text">Vezi imaginea mare</div>
+                            </div>
+                            <div class="full-image">
+                                <div class="container">
+                                    <img  src="icons/masina.jpg">
+                                </div>
+                                <div class="close">Apsasa oriunde pentru a inchide</div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="small-image" src="icons/cer.png">
+                            <div class="overlay">
+                                <div class="overlay-text">Vezi imaginea mare</div>
+                            </div>
+                            <div class="full-image">
+                                <div class="container vertical">
+                                    <img src="icons/cer.png">
+                                </div>
+                                <div class="close">Apsasa oriunde pentru a inchide</div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="small-image" src="icons/usb.jpg">
+                            <div class="overlay">
+                                <div class="overlay-text">Vezi imaginea mare</div>
+                            </div>
+                            <div class="full-image">
+                                <div class="container">
+                                    <img src="icons/usb.jpg">
+                                </div>
+                                <div class="close">Apsasa oriunde pentru a inchide</div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="small-image" src="icons/masina.jpg">
+                            <div class="overlay">
+                                <div class="overlay-text">Vezi imaginea mare</div>
+                            </div>
+                            <div class="full-image">
+                                <div class="container">
+                                    <img src="icons/masina.jpg">
+                                </div>
+                                <div class="close">Apsasa oriunde pentru a inchide</div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="small-image" src="icons/cer.png">
+                            <div class="overlay">
+                                <div class="overlay-text">Vezi imaginea mare</div>
+                            </div>
+                            <div class="full-image">
+                                <div class="container vertical">
+                                    <img src="icons/cer.png">
+                                </div>
+                                <div class="close">Apsasa oriunde pentru a inchide</div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="small-image" src="icons/usb.jpg">
+                            <div class="overlay">
+                                <div class="overlay-text">Vezi imaginea mare</div>
+                            </div>
+                            <div class="full-image">
+                                <div class="container">
+                                    <img src="icons/usb.jpg">
+                                </div>
+                                <div class="close">Apsasa oriunde pentru a inchide</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <form id="myform">
+                <h1>Doresti o oferta personalizata?</h1>
+                <div class="form-group">
+                    <input placeholder="Nume" type="text" id="name" class="item">
+                </div>
+                <div class="form-group">
+                    <input placeholder="Numar de telefon" type="text" id="phone" class="item">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Mesaj" type="text" id="message" class="item"></textarea>
+                    </div>
+                <button type="submit">Cere oferta</button>
+            </form>
+            <div class="robot-img">
+                <img src="icons/robot.jpg">
+            </div>
+        </section>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
