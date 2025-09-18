@@ -273,7 +273,7 @@ h1 {
 }
 
 form button,
-.butoane a:nth-child(3) button{
+.butoane a:nth-child(2) button{
     margin: 50px 5px;
     font-size: 2rem;
     padding: 10px;
@@ -287,8 +287,8 @@ form button,
 
 form button:active,
 form button:hover,
-.butoane a:nth-child(3) button:active,
-.butoane a:nth-child(3) button:hover {
+.butoane a:nth-child(2) button:active,
+.butoane a:nth-child(2) button:hover {
     background-color: var(--action);
     padding: 15px;
     margin: 45px 0px;
@@ -634,4 +634,5 @@ form button:hover {
         height: 100%;
         width: auto;
     }
+
 }
