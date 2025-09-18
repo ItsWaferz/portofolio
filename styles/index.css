@@ -521,7 +521,7 @@ form button:hover {
 
     .butoane button:nth-child(1),
     .butoane button:nth-child(2),
-    .butoane a:nth-child(3) button{
+    .butoane a:nth-child(2) button{
         font-size: 1.2rem;
     }
 
@@ -546,7 +546,7 @@ form button:hover {
 
     .butoane button:nth-child(1),
     .butoane button:nth-child(2),
-    .butoane a:nth-child(3) button{
+    .butoane a:nth-child(2) button{
         font-size: 1rem;
     }
 
@@ -636,3 +636,4 @@ form button:hover {
     }
 
 }
+
