@@ -33,6 +33,7 @@
             <div class="links">
                 <a onclick="scrollHome(), closeBtn()" >Profil</a>
                 <a onclick="scrollPortofoliu(), closeBtn()">Portofoliu</a>
+                <a onclick="scrollContact(), closeBtn()">Cere o oferta</a>
             </div>
         </div>
         <section id="prezentare" class="prezentare">
@@ -50,8 +51,11 @@
                     <div class="butoane">
                             <button onclick="scrollPortofoliu()">Portofoliu</button> 
 
-                        <a href="https://raw.githubusercontent.com/ItsWaferz/portofolio/main/List%C4%83%20de%20pre%C8%9Buri.pdf" download>
+                        <!-- <a href="https://raw.githubusercontent.com/ItsWaferz/portofolio/main/List%C4%83%20de%20pre%C8%9Buri.pdf" download>
                             <button>Lista preturi</button> 
+                        </a> -->
+                        <a>
+                            <button onclick="scrollContact()">Cere o oferta</button>
                         </a>
                     </div>
                 </div>
@@ -148,6 +152,7 @@
                 <div class="form-group">
                     <textarea placeholder="Mesaj" type="text" id="message" class="item"></textarea>
                     </div>
+                <button type="submit">Cere oferta</button>
             </form>
             <div class="robot-img">
                 <img src="icons/robot.jpg">
@@ -158,4 +163,3 @@
         <script src="script.js"></script>
     </body>
 </html>
-
